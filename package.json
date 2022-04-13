@@ -1,12 +1,12 @@
 {
+  "homepage": "https://cesanagu.github.io/workshop-1-fetch",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged",
-    "install:husky": "husky install",
-    "homepage": "https://cesanagu.github.io/workshop-1-fetch"
+    "install:husky": "husky install"
   },
   "devDependencies": {
     "husky": "7",
