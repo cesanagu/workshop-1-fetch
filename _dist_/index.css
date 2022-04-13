@@ -1,3 +1,29 @@
 @import "../_snowpack/pkg/tailwindcss/dist/base.css";
 @import "../_snowpack/pkg/tailwindcss/dist/components.css";
 @import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+#app >div {
+    padding:5px;
+    border:1px solid #fff;
+}
+
+#app >div:hover {
+    border-color:cyan;
+    border-radius: 10px;
+}
+
+#app > div > div, h2, p{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#app > div > div {
+    align-self: center;
+}
+
+#app > div > p {
+    align-self: end;
+}
+
+
+
