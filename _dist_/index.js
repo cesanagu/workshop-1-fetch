@@ -8,7 +8,7 @@ console.log('Happy hacking :)')
 const baseUrl = "https://platzi-avo.vercel.app";
 
 const appNode = document.querySelector('#app');
-appNode.className = 'grid gap-4 grid-cols-3 grid-rows-3'
+appNode.className = 'grid gap-4 grid-cols-2 grid-rows-3 md:grid-cols-3'
 
 
 const formatPrice = (price) => {
@@ -44,7 +44,7 @@ window
         //taste
         const taste = document.createElement('p');
         taste.textContent = item.attributes.taste;
-        taste.className = 'text-sm'
+        taste.className = 'text-sm self-end'
         
         //crear el precio
         const price = document.createElement('div');
@@ -53,7 +53,7 @@ window
 
         const container = document.createElement('div')
         container.append(imagen, title, price, taste);
-        container.className = 'grid grid-cols-2 mt-10'
+        container.className = 'md:grid grid-cols-2 mt-10 sm:block'
 
         todosLosItems.push(container);
     });
