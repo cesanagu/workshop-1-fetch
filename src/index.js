@@ -1,14 +1,13 @@
 
-console.log('Happy hacking :)')
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
-
 const baseUrl = "https://platzi-avo.vercel.app";
 
 const appNode = document.querySelector('#app');
 appNode.className = 'grid gap-4 grid-cols-2 grid-rows-3 md:grid-cols-3'
+appNode.addEventListener('click', (event) => {
+    if (event.target.nodeName === 'H2'){
+        window.alert('Hola H2');
+    }
+});
 
 
 const formatPrice = (price) => {
